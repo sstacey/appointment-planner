@@ -22,6 +22,10 @@ function App() {
     console.log(contacts)
   }
 
+  const addAppointment = () => {
+    
+  }
+
 
   /*
   Implement functions to add data to
@@ -51,7 +55,10 @@ function App() {
           </Route>
           <Route path={ROUTES.APPOINTMENTS}>
             {/* Add props to AppointmentsPage */}
-            <AppointmentsPage />
+            <AppointmentsPage
+              appointments={appointments}
+              contacts={contacts}
+              addAppointment={} />
           </Route>
         </Switch>
       </main>
