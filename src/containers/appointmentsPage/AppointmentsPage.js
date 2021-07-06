@@ -13,7 +13,7 @@ export const AppointmentsPage = ( { appointments, contacts, addAppointment }) =>
     e.preventDefault();
     addAppointment({title, contact, date, time})
     setTitle('')
-    setContact('')
+    setContact(contacts[0].name)
     setDate('')
     setTime('')
    
