@@ -1,5 +1,6 @@
 # appointment-planner
-I complete this capstone project duing the Codecademy instentive program.
-The project is a basic app that allow you to create contacts and appointments.
+I completed this capstone project duing the Codecademy instentive program.
 
-I also used the Github flow to manages updates to become more familiar with working on Github.
+The project demonstrates my ability to build an app using React.
+
+I also used the *Github Flow* to further familiarize myself with Github as a dev tool.
