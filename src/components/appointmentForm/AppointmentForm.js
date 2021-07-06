@@ -39,13 +39,43 @@ export const AppointmentForm = ({
 
   return (
     <form onSubmit={handleSubmit}>
-      <label for="title">Title</label>
-      <input type="text" onChange={handleTitleChange} required id="title" name="title"></input>
-      <ContactPicker contacts={contacts} onChange={handleContactChange} />
-      <label for="date">Title</label>
-      <input type="date" onChange={handleDateChange} required id="date" name="date" min={getTodayString()}></input>
-      <label for="time">Title</label>
-      <input type="time" onChange={handleTimeChange} required id="time" name="time" min={getTodayString()}></input>
+      <label>
+        Title:
+        <input 
+          type="text" 
+          onChange={handleTitleChange} 
+          required 
+          id="title" 
+          name="title"
+          placeholder="Title"
+          value={title} />
+      </label>
+      <ContactPicker 
+        contacts={contacts} 
+        onChange={handleContactChange}
+        contact={contact} />
+      <label>
+        Date:
+        <input 
+          type="date" 
+          onChange={handleDateChange} 
+          required 
+          id="date" 
+          name="date"
+          min={getTodayString()}
+          value={date} />
+      </label>
+      <label>
+        Time:
+        <input 
+          type="time" 
+          onChange={handleTimeChange} 
+          required 
+          id="time" 
+          name="time" 
+          min={getTodayString()}
+          value={time} />
+      </label>
       <input type="submit"></input>
     </form>
   );
