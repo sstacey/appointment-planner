@@ -9,19 +9,18 @@ export const ContactsPage = ( { contacts, addContact }) => {
  const [phone, setPhone] = useState('') 
  const [email, setEmail] = useState('')
 
-  // Check for dups when name changes
-  //Only add new contact on submission if name does not exisits
   useEffect(() => {
     const dup = contacts.some((contact) => contact.name.toLowerCase() === name.toLowerCase())
     const submitButton = document.getElementById('submit')
     const nameError = document.getElementById('name-error')
     if (dup) {
-      console.log('Dup found!')
       submitButton.disabled = true
-      nameError.hidden = false
+      submitButton.style.background = 'lightgrey'
+      nameError.style.display = 'block'
     } else {
+      submitButton.style.background = '#03a8d8'
       submitButton.disabled = false
-      nameError.hidden = true
+      nameError.style.display = 'none'
     }
   }, [name])
 

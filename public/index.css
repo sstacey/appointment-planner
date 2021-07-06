@@ -90,3 +90,8 @@ select {
 .tile-container {
   margin-bottom: 20px;
 }
+
+#name-error {
+  display: none;
+  color: red;
+}
