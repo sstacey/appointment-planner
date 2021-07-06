@@ -22,8 +22,8 @@ function App() {
     console.log(contacts)
   }
 
-  const addAppointment = () => {
-    
+  const addAppointment = (appointment) => {
+    setAppointments(prevState => [...prevState, appointment])
   }
 
 
@@ -58,7 +58,7 @@ function App() {
             <AppointmentsPage
               appointments={appointments}
               contacts={contacts}
-              addAppointment={} />
+              addAppointment={addAppointment} />
           </Route>
         </Switch>
       </main>
