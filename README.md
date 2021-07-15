@@ -1,5 +1,5 @@
 # appointment-planner
-I completed this capstone project duing the Codecademy instentive program.
+I completed this capstone project during the Codecademy Pro intensive program.
 
 The project demonstrates my ability to build an app using React.
 
